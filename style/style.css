@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  font-family: "Nunito", sans-serif;
+}
+
+#mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #28282B;
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%); /* Start with menu hidden off-screen */
+}
+#mobile h1 {
+  color: #e67816;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+#mobile ul img {
+  width: 70px;
+  margin: -75px 30px;
+  float: right;
+}
+#mobile ul li {
+  padding: 98px 0px;
+  text-align: center;
+  list-style-type: none;
+}
+#mobile ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: bold;
+}
+#mobile ul li a:hover {
+  text-decoration: underline;
+}
+
+.open {
+  right: 0 !important; /* Show menu by moving it to the right */
+}
+
+/* For normal */
+nav ul #responsive {
+  float: right;
+  margin-top: 15px;
+}
+nav ul img {
+  width: 105px;
+}
+nav ul li {
+  display: none;
+  float: right;
+  padding: 15px 4px;
+  margin-top: 25px;
+}
+nav ul li a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.start {
+  margin-top: 200px;
+  text-align: center;
+}
+.start h1 {
+  color: #e67816;
+  padding: 10px 0px;
+}
+.start h3 {
+  letter-spacing: 1px;
+}
+
+#overlay {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#overlay h1 {
+  text-align: center;
+  margin-top: 500px;
+  padding: 30px 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+#overlay .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#overlay .services .parentmob {
+  margin: 10px 0px;
+  background-color: #e67816;
+  border: 0.4rem solid #9a4e0a;
+  border-radius: 10px;
+  width: 75%;
+}
+#overlay .services img {
+  margin: 30px 0px;
+  padding: 0px 15px;
+  width: 80px;
+}
+#overlay .services p {
+  color: white;
+  margin: 10px;
+}
+#overlay .statistic {
+  margin-top: 70px;
+}
+#overlay .statistic .text {
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  padding-bottom: 150px;
+}
+#overlay .statistic .text i {
+  font-size: 70px;
+  color: #e67816;
+}
+#overlay .statistic .text h3 {
+  color: #c8c7c7;
+}
+#overlay .statistic .text p {
+  margin-top: 20px;
+  color: #c8c7c7;
+}
+#overlay .startnow {
+  padding-bottom: 150px;
+}
+#overlay .startnow a {
+  text-decoration: none;
+}
+#overlay h2 {
+  padding: 20px 25px;
+  text-transform: capitalize;
+  color: #e67816;
+  text-align: center;
+}
+#overlay button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #e67816;
+  color: #c8c7c7;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e67816;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+#overlay button:hover {
+  color: white;
+  background-image: url("images/background2.jpg");
+  mix-blend-mode: screen;
+  border: 3px solid #e67816;
+  padding: 12px 22px;
+}
+
+footer {
+  background-color: #1c1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+footer p {
+  color: #c8c7c7;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+footer img {
+  width: 60px;
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 0px 0px 20px 20px;
+}
+
+.overlay2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlay2 h1 {
+  padding-top: 150px;
+  text-align: center;
+  color: #e67816;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+.overlay2 .plans {
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overlay2 .plan {
+  margin: 20px 50px;
+  padding: 20px;
+  width: 50%;
+  color: #c8c7c7;
+  border: 3px solid #28282B;
+  border-radius: 7px;
+  background-color: #28282B;
+}
+.overlay2 .plan ul {
+  padding: 10px 10px;
+}
+.overlay2 .plan ul li {
+  padding-top: 8px;
+}
+.overlay2 .plan ul button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #e67816;
+  color: #c8c7c7;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e67816;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.overlay2 .plan ul button:hover {
+  color: white;
+  background-color: black;
+  mix-blend-mode: screen;
+  border: 3px solid #e67816;
+  padding: 12px 22px;
+}
+.overlay2 .plan ul h3 {
+  color: #e67816;
+}
+
+/* Scaling for Larger devices */
+@media (min-width: 768px) {
+  /* It displays the menu for larger devices and hides for mobile ones */
+  nav ul #responsive {
+    display: none;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    padding: 0px 25px;
+    font-size: 22px;
+  }
+  .start h1 {
+    font-size: 55px;
+  }
+  .start h3 {
+    font-size: 35px;
+  }
+  #overlay .services {
+    flex-direction: row;
+  }
+  #overlay .services .parentmob {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 20%;
+  }
+  #overlay .statistic {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #overlay .statistic .text {
+    padding: 40px 0px;
+    width: 60%;
+    margin: auto;
+  }
+  #overlay .startnow {
+    margin-top: 200px;
+  }
+  .overlay2 h1 {
+    padding-top: 250px;
+  }
+  .overlay2 .plans {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 0px;
+  }
+  .overlay2 .plan {
+    width: 30%;
+  }
+  .overlay2 .plan .price {
+    margin: 10px 5px;
+    font-size: 25px;
+    text-align: left;
+  }
+  .overlay2 .plan h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
