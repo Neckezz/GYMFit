@@ -218,22 +218,25 @@ footer img {
   align-items: center;
   justify-content: center;
 }
-.overlay2 .plan {
+.overlay2 .plan1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px 50px;
   padding: 20px;
-  width: 50%;
+  width: 70%;
   color: #c8c7c7;
   border: 3px solid #28282B;
   border-radius: 7px;
   background-color: #28282B;
 }
-.overlay2 .plan ul {
+.overlay2 .plan1 ul {
   padding: 10px 10px;
 }
-.overlay2 .plan ul li {
+.overlay2 .plan1 ul li {
   padding-top: 8px;
 }
-.overlay2 .plan ul button {
+.overlay2 .plan1 ul button {
   margin: 0 auto;
   display: block;
   margin-top: 30px;
@@ -246,14 +249,96 @@ footer img {
   border-radius: 5px;
   transition-duration: 0.5s;
 }
-.overlay2 .plan ul button:hover {
+.overlay2 .plan1 ul button:hover {
   color: white;
   background-color: black;
   mix-blend-mode: screen;
   border: 3px solid #e67816;
   padding: 12px 22px;
 }
-.overlay2 .plan ul h3 {
+.overlay2 .plan1 ul h3 {
+  color: #e67816;
+}
+.overlay2 .plan2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 50px;
+  padding: 20px;
+  width: 70%;
+  color: #c8c7c7;
+  border: 3px solid #28282B;
+  border-radius: 7px;
+  background-color: #28282B;
+}
+.overlay2 .plan2 ul {
+  padding: 10px 10px;
+}
+.overlay2 .plan2 ul li {
+  padding-top: 8px;
+}
+.overlay2 .plan2 ul button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #e67816;
+  color: #c8c7c7;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e67816;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.overlay2 .plan2 ul button:hover {
+  color: white;
+  background-color: black;
+  mix-blend-mode: screen;
+  border: 3px solid #e67816;
+  padding: 12px 22px;
+}
+.overlay2 .plan2 ul h3 {
+  color: #e67816;
+}
+.overlay2 .plan3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 50px;
+  padding: 20px;
+  width: 70%;
+  color: #c8c7c7;
+  border: 3px solid #28282B;
+  border-radius: 7px;
+  background-color: #28282B;
+}
+.overlay2 .plan3 ul {
+  padding: 10px 10px;
+}
+.overlay2 .plan3 ul li {
+  padding-top: 8px;
+}
+.overlay2 .plan3 ul button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #e67816;
+  color: #c8c7c7;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e67816;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.overlay2 .plan3 ul button:hover {
+  color: white;
+  background-color: black;
+  mix-blend-mode: screen;
+  border: 3px solid #e67816;
+  padding: 12px 22px;
+}
+.overlay2 .plan3 ul h3 {
   color: #e67816;
 }
 
@@ -306,15 +391,39 @@ footer img {
     flex-direction: row;
     padding: 200px 0px;
   }
-  .overlay2 .plan {
+  .overlay2 .plan1 {
     width: 30%;
   }
-  .overlay2 .plan .price {
+  .overlay2 .plan1 .price {
     margin: 10px 5px;
     font-size: 25px;
     text-align: left;
   }
-  .overlay2 .plan h3 {
+  .overlay2 .plan1 h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .overlay2 .plan2 {
+    width: 30%;
+  }
+  .overlay2 .plan2 .price {
+    margin: 10px 5px;
+    font-size: 25px;
+    text-align: left;
+  }
+  .overlay2 .plan2 h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .overlay2 .plan3 {
+    width: 30%;
+  }
+  .overlay2 .plan3 .price {
+    margin: 10px 5px;
+    font-size: 25px;
+    text-align: left;
+  }
+  .overlay2 .plan3 h3 {
     text-align: center;
     font-size: 30px;
   }

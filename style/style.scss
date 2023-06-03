@@ -20,7 +20,45 @@
       padding: 12px 22px;
     }
   }
+  @mixin plan{
+        margin:20px 50px;
+        padding:20px;
 
+        width:70%;
+        color:$p-color;
+
+        border:3px solid $plan-color;
+        border-radius: 7px;
+        background-color:  	$plan-color;
+        ul{
+            padding:10px 10px;
+            li{
+                padding-top:8px;
+            }
+            button{
+                @include customButton();
+            }
+            h3{
+                color:$logo-color;
+            }
+        }
+  }
+  @mixin planpc{
+    .price{
+        margin:10px 5px;
+        font-size:25px;
+        text-align: left;
+    }
+    h3{
+        text-align: center;
+        font-size:30px;
+    }
+    width:30%;
+  }
+  @mixin backgroundsettings{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 $logo-color: #e67816;
 $p-color:#c8c7c7;
 $plan-color:#28282B;
@@ -122,8 +160,7 @@ nav{
 
 #overlay{
     background-image: url('images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include backgroundsettings();
     h1{
         text-align: center;
         margin-top:500px;
@@ -240,8 +277,7 @@ footer{
 }
 .overlay2{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/background2.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
+    @include backgroundsettings();
     h1{
         padding-top:150px;
         text-align: center;
@@ -258,28 +294,20 @@ footer{
             align-items: center;
             justify-content: center;
         }
-    .plan{
-        margin:20px 50px;
-        padding:20px;
-
-        width:50%;
-        color:$p-color;
-
-        border:3px solid $plan-color;
-        border-radius: 7px;
-        background-color:  	$plan-color;
-        ul{
-            padding:10px 10px;
-            li{
-                padding-top:8px;
-            }
-            button{
-                @include customButton();
-            }
-            h3{
-                color:$logo-color;
-            }
-        }
+    .plan1{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika1.png');
+        @include backgroundsettings();
+        @include plan();
+    }
+    .plan2{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika2.png');
+        @include backgroundsettings();
+        @include plan();
+    }
+    .plan3{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika3.png');
+        @include backgroundsettings();
+        @include plan();
     }
 }
 
@@ -346,17 +374,14 @@ footer{
             flex-direction: row;
             padding:200px 0px;
         }
-        .plan{
-            .price{
-                margin:10px 5px;
-                font-size:25px;
-                text-align: left;
-            }
-            h3{
-                text-align: center;
-                font-size:30px;
-            }
-            width:30%;
+        .plan1{
+            @include planpc();
+        }
+        .plan2{
+            @include planpc();
+        }
+        .plan3{
+            @include planpc();
         }
     }
 }
