@@ -59,6 +59,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  @mixin flexpropertys{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 $logo-color: #e67816;
 $p-color:#c8c7c7;
 $plan-color:#28282B;
@@ -93,7 +98,7 @@ html{
     
     ul {
       img {
-        width: 70px;
+        width: 85px;
         margin: -75px 30px;
         float: right;
       }
@@ -122,10 +127,15 @@ html{
   }
 /* For normal */
 nav{
+    
     ul{
+        .line{
+            display: inline;
+            padding:10px 5px;
+            border-left: 3px solid whitesmoke;
+        }
         #responsive{
             float:right;
-            margin-top:15px;
         }
         img{
             width:105px;
@@ -133,11 +143,11 @@ nav{
         li{
             display:none;
             float:right;
-            padding:15px 4px;
+            padding:15px 0px;
             margin-top:25px;
             a{
                 font-weight: bold;
-                color:black;
+                color:whitesmoke;
                 text-decoration: none;
                 &:hover{
                     text-decoration: underline;
@@ -146,16 +156,32 @@ nav{
         }
     }
 }
+#video{
+    width: 100vw;
+    height: 100vh;
+    /* Makes it stays in place so it doesnt bug when scrolling */
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; /* Puts it begind the text */
+}
 .start{
-    margin-top:200px;
+    margin-top:250px;
     text-align: center;
     h1{
+        font-size: 60px;
         color:$logo-color;
         padding:10px 0px;
     }
     h3{
+        color:whitesmoke;
+        font-size: 30px;
         letter-spacing: 1px;
     }
+    margin-bottom:-80px;
 }
 
 #overlay{
@@ -173,9 +199,7 @@ nav{
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    @include flexpropertys();
     .parentmob{
         margin:10px 0px;
         background-color: $logo-color;
@@ -213,9 +237,59 @@ nav{
         }
         padding-bottom: 150px;
     }
+
+}
+#team{
+    color:$logo-color;
+    text-align: center;
+    font-size: 50px;
+    margin-top:300px;
+    margin-bottom: 70px;
+}
+.ourteam{
+    display:flex;
+    flex-direction: column;
+    @include flexpropertys();
+    .opis{
+        width:70%;
+        h5{
+            color:$logo-color;
+            font-size: 30px;
+        }
+        p{
+            color:$p-color;
+        }
+        text-align: center;
+    }
+    .circle{
+        width: 250px;
+        height: 250px;
+        border: 5px solid $plan-color;
+        border-radius: 50%;
+        overflow: hidden;
+        margin:30px 0px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+    } 
 }
 .startnow{
-    padding-bottom:150px;
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) );
+    padding:150px 0px;
+    h2{
+        color:whitesmoke;
+        text-align: center;
+        margin:30px 50px;
+        p{
+            color:$logo-color;
+            font-weight: bold;
+        }
+    }
+    img{
+        display:none;
+    }
     a{
         text-decoration: none;
     }
@@ -318,6 +392,9 @@ footer{
     /* It displays the menu for larger devices and hides for mobile ones */
     nav{
         ul{
+            img{
+                width:120px;
+            }
             #responsive{
                 display:none;
             }
@@ -335,10 +412,10 @@ footer{
 
     .start{
         h1{
-            font-size:55px;
+            font-size:75px;
         }
         h3{
-            font-size:35px;
+            font-size:45px;
         }
     }
     #overlay{
@@ -361,8 +438,18 @@ footer{
                 margin: auto;
             }
         }
+        .ourteam{
+            margin:0px 50px;
+            flex-direction: row;
+            .opis{
+                width:20%;
+            }
+        }
         .startnow{
             margin-top:200px;
+            .join{
+                text-align: left;
+            }
         }
     }
     .overlay2{

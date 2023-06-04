@@ -30,7 +30,7 @@ html body {
   font-weight: bolder;
 }
 #mobile ul img {
-  width: 70px;
+  width: 85px;
   margin: -75px 30px;
   float: right;
 }
@@ -54,9 +54,13 @@ html body {
 }
 
 /* For normal */
+nav ul .line {
+  display: inline;
+  padding: 10px 5px;
+  border-left: 3px solid whitesmoke;
+}
 nav ul #responsive {
   float: right;
-  margin-top: 15px;
 }
 nav ul img {
   width: 105px;
@@ -64,27 +68,45 @@ nav ul img {
 nav ul li {
   display: none;
   float: right;
-  padding: 15px 4px;
+  padding: 15px 0px;
   margin-top: 25px;
 }
 nav ul li a {
   font-weight: bold;
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 nav ul li a:hover {
   text-decoration: underline;
 }
 
+#video {
+  width: 100vw;
+  height: 100vh;
+  /* Makes it stays in place so it doesnt bug when scrolling */
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1; /* Puts it begind the text */
+}
+
 .start {
-  margin-top: 200px;
+  margin-top: 250px;
   text-align: center;
+  margin-bottom: -80px;
 }
 .start h1 {
+  font-size: 60px;
   color: #e67816;
   padding: 10px 0px;
 }
 .start h3 {
+  color: whitesmoke;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 
@@ -144,8 +166,60 @@ nav ul li a:hover {
   margin-top: 20px;
   color: #c8c7c7;
 }
+#overlay #team {
+  color: #e67816;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 300px;
+  margin-bottom: 70px;
+}
+#overlay .ourteam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#overlay .ourteam .opis {
+  width: 70%;
+  text-align: center;
+}
+#overlay .ourteam .opis h5 {
+  color: #e67816;
+  font-size: 30px;
+}
+#overlay .ourteam .opis p {
+  color: #c8c7c7;
+}
+#overlay .ourteam .circle {
+  width: 250px;
+  height: 250px;
+  border: 5px solid #28282B;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px 0px;
+}
+#overlay .ourteam .circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #overlay .startnow {
-  padding-bottom: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  padding: 150px 0px;
+}
+#overlay .startnow h2 {
+  color: whitesmoke;
+  text-align: center;
+  margin: 30px 50px;
+}
+#overlay .startnow h2 p {
+  color: #e67816;
+  font-weight: bold;
+}
+#overlay .startnow img {
+  display: none;
 }
 #overlay .startnow a {
   text-decoration: none;
@@ -345,6 +419,9 @@ footer img {
 /* Scaling for Larger devices */
 @media (min-width: 768px) {
   /* It displays the menu for larger devices and hides for mobile ones */
+  nav ul img {
+    width: 120px;
+  }
   nav ul #responsive {
     display: none;
   }
@@ -356,10 +433,10 @@ footer img {
     font-size: 22px;
   }
   .start h1 {
-    font-size: 55px;
+    font-size: 75px;
   }
   .start h3 {
-    font-size: 35px;
+    font-size: 45px;
   }
   #overlay .services {
     flex-direction: row;
@@ -380,8 +457,18 @@ footer img {
     width: 60%;
     margin: auto;
   }
+  #overlay .ourteam {
+    margin: 0px 50px;
+    flex-direction: row;
+  }
+  #overlay .ourteam .opis {
+    width: 20%;
+  }
   #overlay .startnow {
     margin-top: 200px;
+  }
+  #overlay .startnow .join {
+    text-align: left;
   }
   .overlay2 h1 {
     padding-top: 250px;
