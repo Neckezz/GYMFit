@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="style/images/logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,11 @@
     <nav>
         <ul>
             <a href="index.html"><img src="style/images/logo.png" alt="Logo"></a>
+            <li><a href="membership.html">Web Store</a></li>
             <li><a href="membership.html">Membership</a></li>
+            <li><div class="line"></div></li>
             <li><a href="#">Visit us</a></li>
+            <li><a href="#team">Our team</a></li>
             <li><a href="#overlay">Our Services</a></li>
             <img id="responsive" src="style/images/responsive.png" alt="responsive" onclick="toggleMenu()">
         </ul>
@@ -21,11 +25,16 @@
         <ul>
             <h1>GymFit</h1>
             <img id="close" src="style/images/x.jpg" alt="xicon" onclick="closeMenu()">
-            <li><a href="#overlay">Our Services</a></li>
-            <li><a href="#">Visit us</a></li>
-            <li><a href="membership.html">Membership</a></li>
+            <li><a href="#overlay" onclick="closeMenu()">Our Services</a></li>
+            <li><a href="#team" onclick="closeMenu()">Our team</a></li>
+            <li><a href="#" onclick="closeMenu()">Visit us</a></li>
+            <li><a href="membership.html" onclick="closeMenu()">Membership</a></li>
+            <li><a href="membership.html" onclick="closeMenu()">Web Shop</a></li>
         </ul>
     </div>
+    <video id="video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="style/images/video.mp4" type="video/mp4">
+        </video>
         <div class="start">
             <h1>GYMFit Serbia</h1>
             <h3>Place where your fat burns in hell</h3>
@@ -68,9 +77,38 @@
                         <p>In 27 years of business, over 20 thousand trainees have passed through our clubs. With us, our members solved excess and underweight, health challenges, found entertainment, company, and even life companions.</p>
                     </div>
                 </div>
+                <h3 id="team">Meet our team</h3>
+                <div class="ourteam">
+                    <div class="opis">
+                        <h5>Kostandinka Lukic</h5>
+                        <p>„The body achives what the mind belives!”</p>
+                        </div>
+                    <div class="circle">
+                        <img src="style/images/covek1.jpg" alt="Kostandinka Lukic">
+                    </div>
+                    <div class="opis">
+                        <h5>Luka Kostandinovic</h5>
+                        <p>„You can chose between two pains.The pain of discipline or painf of regreat”</p>
+                    </div>
+                    <div class="circle">
+                        <img src="style/images/covek2.jpg" alt="Luka Kostadinovic">
+                    </div>
+                    <div class="opis">
+                        <h5>Petar Petrovic</h5>
+                        <p>„Stop thinking start doing”</p>
+                        </div>
+                    <div class="circle">
+                        <img src="style/images/covek3.jpg" alt="Petar Petrovic">
+                    </div>
+                </div>
+
+
+
                 <div class="startnow">
-                    <h2>There are no excuses for you health. Start now!</h2>
-                    <h2>Get your fitness coach+membership for only 59.99$ per month.</h2>
+                    <div class="join">
+                    <h2>There are no excuses for you health. Start now! <br>
+                    Get your fitness coach+membership for only <p>59.99$ per month.</p></h2>
+                    </div>
                     <a href="membership.html"><button>Learn more</button></a>
                 </div>
         </div>
