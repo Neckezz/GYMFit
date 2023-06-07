@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 @mixin customButton {
     margin: 0 auto;
-    display: block;
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: $logo-color;
     color: $p-color;
     font-size: 16px;
@@ -17,7 +16,7 @@
       background-color:black;
       mix-blend-mode: screen;
       border: 3px solid $logo-color;
-      padding: 12px 22px;
+      padding: 12px 17px;
     }
   }
   @mixin plan{
@@ -262,8 +261,8 @@ nav{
         text-align: center;
     }
     .circle{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border: 5px solid $plan-color;
         border-radius: 50%;
         overflow: hidden;
@@ -274,6 +273,19 @@ nav{
             object-fit: cover;
             }
     } 
+}
+#visit{
+    margin-top:50px;
+    font-size:60px;
+    color:$logo-color;
+}
+.visitus{
+    iframe{
+        border: 5px solid;
+        border-radius: 20px;
+    }
+    display:flex;
+    @include flexpropertys();
 }
 .startnow{
     background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) );
@@ -327,27 +339,46 @@ button{
 
 footer{
     background-color: #1c1d1d;
-
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    p{
+    #sub{
         color:$p-color;
-        font-size:20px;
-        margin-top:15px;
-        margin-left:15px;
+        text-align: center;
+        padding:20px 0px;
+        font-size:30px;
     }
-    img{
+.news{
+    display:block;
+    @include flexpropertys();
+      .input-email {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 16px;
+        width: 300px;
         
-        width: 60px;
-        display:inline-flex;
-        margin-top:20px;
-        padding:0px 0px 20px 20px;
+        &::placeholder {
+          color: #999;
+        }
+        
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+      }
+    button{
+        @include customButton();
     }
-
+    .socialmedia{
+        padding-top:20px;
+        img{
+            width:45px;
+        }
+        a{
+            padding:0px 15px;
+        }
+    }
+}
 }
 .overlay2{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/background2.jpg');
@@ -438,15 +469,21 @@ footer{
                 margin: auto;
             }
         }
+        #visit{
+            margin-top:250px;
+        }
         .ourteam{
+            
             margin:0px 50px;
             flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
             .opis{
                 width:20%;
             }
         }
         .startnow{
-            margin-top:200px;
+            padding:200px 0px;
             .join{
                 text-align: left;
             }
