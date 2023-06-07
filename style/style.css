@@ -35,14 +35,16 @@ html body {
   float: right;
 }
 #mobile ul li {
-  padding: 98px 0px;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   list-style-type: none;
 }
 #mobile ul li a {
   color: white;
   text-decoration: none;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bold;
 }
 #mobile ul li a:hover {
@@ -329,8 +331,11 @@ footer .news .socialmedia a {
   padding: 0px 15px;
 }
 
-.overlay2 {
+body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background2.jpg");
+}
+
+.overlay2 {
   background-size: cover;
   background-repeat: no-repeat;
 }

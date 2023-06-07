@@ -10,7 +10,7 @@ function emailVerify() {
   let input = document.getElementsByClassName('input-email')[0].value;
   let resultElement = document.getElementById('result');
 
-  // Define and initialize the regex variable
+  // Email verifying variable
   let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (regex.test(input)) {

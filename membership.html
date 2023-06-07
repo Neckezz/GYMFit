@@ -12,8 +12,10 @@
         <ul>
             <a href="index.html"><img src="style/images/logo.png" alt="Logo"></a>
             <li><a href="membership.html">Membership</a></li>
-            <li><a href="#">Visit us</a></li>
-            <li><a href="index.html#team">Our team</a></li>
+            <li><a href="membership.html">Web Store</a></li>
+            <li><div class="line"></div></li>
+            <li><a href="index.html#visit">Visit us</a></li>
+            <li><a href="inde.html#team">Our team</a></li>
             <li><a href="index.html#overlay">Our Services</a></li>
             <img id="responsive" src="style/images/responsive.png" alt="responsive" onclick="toggleMenu()">
         </ul>
@@ -25,8 +27,8 @@
             <li><a href="index.html#overlay" onclick="closeMenu()">Our Services</a></li>
             <li><a href="#team"onclick="closeMenu()" >Our team</a></li>
             <li><a href="#" onclick="closeMenu()">Visit us</a></li>
-            <li><a href="membership.html" onclick="closeMenu()">Membership</a></li>
             <li><a href="membership.html" onclick="closeMenu()">Web Shop</a></li>
+            <li><a href="membership.html" onclick="closeMenu()">Membership</a></li>
         </ul>
         </div>
     <div class="overlay2">
@@ -66,15 +68,18 @@
     </div>
 
     <footer>
-        <p>Subscribe to our Newsletter:</p>
+        <p id="sub">Subscribe to our Newsletter:</p>
         <div class="news">
             <input type="email" class="input-email" placeholder="Enter your email">
-            <button onclick="emailverify()">Sumbit</button>
-        <div class="socialmedia">
-            <a href="#" target="_blank"><img src="style/images/facebook2.png" alt="facebook"  id="fb"></a>
-            <a href="#" target="_blank"><img src="style/images/instagram2.png" alt="facebook" id="ig"></a>
-            <a href="#" target="_blank"><img src="style/images/tiktok2.png" alt="facebook" id="tt"></a>
-        </div>
+            <button onclick="emailVerify()">Submit</button>
+            <p id="result" style="margin-top:10px;"></p>
+            <div class="socialmedia">
+              <a href="#" target="_blank"><img src="style/images/facebook2.png" alt="facebook" id="fb"></a>
+              <a href="#" target="_blank"><img src="style/images/instagram2.png" alt="instagram" id="ig"></a>
+              <a href="#" target="_blank"><img src="style/images/tiktok2.png" alt="tiktok" id="tt"></a>
+            </div>
+          </div>
+          
         </div>
     </footer>
     <script src="js/script.js"></script>
