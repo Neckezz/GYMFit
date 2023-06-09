@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+$logo-color: #e67816;
+$p-color:#c8c7c7;
+$plan-color:#28282B;
+@mixin customButton {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: $logo-color;
+    color: $p-color;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid $logo-color;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  
+    &:hover {
+      color: white;
+      background-color:black;
+      mix-blend-mode: screen;
+      border: 3px solid $logo-color;
+      padding: 12px 17px;
+    }
+  }
+  @mixin backgroundsettings{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @mixin flexpropertys{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+html{
+    body{
+        font-family: 'Nunito', sans-serif;
+    }
+}
+header{
+    ul{
+        #logo{
+            width:120px;
+           }
+        li{
+            display:inline;
+            float:right;
+            margin:30px 20px;
+            list-style-type:none;
+           img{
+            width:60px;
+           }
+        }
+    }
+}
+.nav{
+   h1{
+    color:White;
+    display:block;
+    margin-top: 100px;
+    text-align: center;
+    font-size:45px;
+    letter-spacing: 3px;
+   }
+   .grid{
+    margin-top:30px;
+    margin-bottom:200px;
+    display:flex;
+    justify-content: center;
+    h2{
+        padding-top:180px;
+        color:$p-color;
+        text-align: center;
+    }
+   .vertical{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/suplementi.jpg');
+    @include backgroundsettings();
+    width:200px;
+    height:400px;
+    border:6px solid $plan-color;
+   }
+   .horizontal{
+    h2{
+        padding-top: 80px;
+    }
+   .horizontal1{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/man.jpg');
+        @include backgroundsettings();
+        border-top:6px solid $plan-color;
+        border-right:6px solid $plan-color;
+        border-bottom:6px solid $plan-color;
+        width:200px;
+        height:200px;
+   }
+   .horizontal2{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/women.jpg');
+        @include backgroundsettings();
+        border-right:6px solid $plan-color;
+        border-bottom:6px solid $plan-color;
+        width:200px;
+        height:200px;
+   }
+}
+}
+}
+footer{
+    background-color: #1c1d1d;
+    #sub{
+        color:$p-color;
+        text-align: center;
+        padding:20px 0px;
+        font-size:30px;
+    }
+.news{
+    display:block;
+    @include flexpropertys();
+      .input-email {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 16px;
+        width: 300px;
+        
+        &::placeholder {
+          color: #999;
+        }
+        
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+      }
+    button{
+        @include customButton();
+    }
+    .socialmedia{
+        padding-top:20px;
+        img{
+            width:45px;
+        }
+        a{
+            padding:0px 15px;
+        }
+    }
+}
+}
+@media (min-width: 768px){
+    .nav{
+        font-size:20px;
+.grid{
+    h2{
+        padding-top:250px;
+    }
+    .vertical{
+        width:400px;
+        height:600px;
+    }
+    .horizontal{
+        
+        h2{
+            padding-top:120px;
+        }
+        .horizontal1{
+            width:300px;
+            height:300px;
+        }
+        .horizontal2{
+            width:300px;
+            height:300px;
+        }
+    }
+}
+}
+}
