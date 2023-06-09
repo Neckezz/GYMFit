@@ -10,7 +10,6 @@
     border: 3px solid $logo-color;
     border-radius: 5px;
     transition-duration: 0.5s;
-  
     &:hover {
       color: white;
       background-color:black;
@@ -70,9 +69,9 @@ $plan-color:#28282B;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html{
-    scroll-behavior: smooth;
     body{
         font-family: 'Nunito', sans-serif;
     }
@@ -186,7 +185,7 @@ nav{
 }
 
 #overlay{
-    background-image: url('images/background.jpg');
+    background-image: url('/images/background.jpg');
     @include backgroundsettings();
     h1{
         text-align: center;
@@ -331,7 +330,7 @@ button{
     transition-duration: 0.5s;
     &:hover{
         color:white;
-        background-image: url('images/background2.jpg');
+        background-image: url('/images/background2.jpg');
         mix-blend-mode: screen;
         border:3px solid $logo-color;
         padding:12px 22px;
@@ -383,12 +382,13 @@ footer{
 }
 }
 body{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/background2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/background2.jpg');
+    @include backgroundsettings();
 }
 .overlay2{
     @include backgroundsettings();
     h1{
-        padding-top:150px;
+        padding-top:50px;
         text-align: center;
         color:$logo-color;
         font-weight: bold;
@@ -396,7 +396,6 @@ body{
         font-size: 50px ;
     }
         .plans{
-            
             padding-bottom: 200px;
             display:flex;
             flex-direction: column;
@@ -404,17 +403,17 @@ body{
             justify-content: center;
         }
     .plan1{
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika1.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/slika1.png');
         @include backgroundsettings();
         @include plan();
     }
     .plan2{
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika2.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/slika2.png');
         @include backgroundsettings();
         @include plan();
     }
     .plan3{
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/slika3.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/slika3.png');
         @include backgroundsettings();
         @include plan();
     }
@@ -495,7 +494,7 @@ body{
     }
     .overlay2{
         h1{
-            padding-top: 250px;
+            padding-top: 150px;
         }
         .plans{
             display:flex;

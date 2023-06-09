@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
+
 html body {
   font-family: "Nunito", sans-serif;
 }
@@ -113,7 +112,7 @@ nav ul li a:hover {
 }
 
 #overlay {
-  background-image: url("images/background.jpg");
+  background-image: url("/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -262,7 +261,7 @@ nav ul li a:hover {
 }
 #overlay button:hover {
   color: white;
-  background-image: url("images/background2.jpg");
+  background-image: url("/images/background2.jpg");
   mix-blend-mode: screen;
   border: 3px solid #e67816;
   padding: 12px 22px;
@@ -332,7 +331,9 @@ footer .news .socialmedia a {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay2 {
@@ -340,7 +341,7 @@ body {
   background-repeat: no-repeat;
 }
 .overlay2 h1 {
-  padding-top: 150px;
+  padding-top: 50px;
   text-align: center;
   color: #e67816;
   font-weight: bold;
@@ -355,7 +356,7 @@ body {
   justify-content: center;
 }
 .overlay2 .plan1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika1.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
@@ -395,7 +396,7 @@ body {
   color: #e67816;
 }
 .overlay2 .plan2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika2.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
@@ -435,7 +436,7 @@ body {
   color: #e67816;
 }
 .overlay2 .plan3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika3.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
@@ -535,7 +536,7 @@ body {
     text-align: left;
   }
   .overlay2 h1 {
-    padding-top: 250px;
+    padding-top: 150px;
   }
   .overlay2 .plans {
     display: flex;
@@ -578,4 +579,164 @@ body {
     text-align: center;
     font-size: 30px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html body {
+  font-family: "Nunito", sans-serif;
+}
+
+header ul #logo {
+  width: 120px;
+}
+header ul li {
+  display: inline;
+  float: right;
+  margin: 30px 20px;
+  list-style-type: none;
+}
+header ul li img {
+  width: 60px;
+}
+
+.nav h1 {
+  color: White;
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+.nav .grid {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+.nav .grid h2 {
+  padding-top: 180px;
+  color: #c8c7c7;
+  text-align: center;
+}
+.nav .grid .vertical {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/suplementi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+  border: 6px solid #28282B;
+}
+.nav .grid .horizontal h2 {
+  padding-top: 80px;
+}
+.nav .grid .horizontal .horizontal1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/man.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 6px solid #28282B;
+  border-right: 6px solid #28282B;
+  border-bottom: 6px solid #28282B;
+  width: 200px;
+  height: 200px;
+}
+.nav .grid .horizontal .horizontal2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/women.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-right: 6px solid #28282B;
+  border-bottom: 6px solid #28282B;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background-color: #1c1d1d;
+}
+footer #sub {
+  color: #c8c7c7;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 30px;
+}
+footer .news {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+footer .news .input-email {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+  width: 300px;
+}
+footer .news .input-email::-moz-placeholder {
+  color: #999;
+}
+footer .news .input-email::placeholder {
+  color: #999;
+}
+footer .news .input-email:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+footer .news button {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 15px;
+  background-color: #e67816;
+  color: #c8c7c7;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e67816;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+footer .news button:hover {
+  color: white;
+  background-color: black;
+  mix-blend-mode: screen;
+  border: 3px solid #e67816;
+  padding: 12px 17px;
+}
+footer .news .socialmedia {
+  padding-top: 20px;
+}
+footer .news .socialmedia img {
+  width: 45px;
+}
+footer .news .socialmedia a {
+  padding: 0px 15px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    font-size: 20px;
+  }
+  .nav .grid h2 {
+    padding-top: 250px;
+  }
+  .nav .grid .vertical {
+    width: 400px;
+    height: 600px;
+  }
+  .nav .grid .horizontal h2 {
+    padding-top: 120px;
+  }
+  .nav .grid .horizontal .horizontal1 {
+    width: 300px;
+    height: 300px;
+  }
+  .nav .grid .horizontal .horizontal2 {
+    width: 300px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
