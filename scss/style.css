@@ -269,6 +269,7 @@ nav ul li a:hover {
 }
 
 footer {
+  padding-bottom: 10px;
   background-color: #1c1d1d;
 }
 footer #sub {
