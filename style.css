@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 
 #overlay {
-  background-image: url("/images/background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -262,7 +262,7 @@ nav ul li a:hover {
 }
 #overlay button:hover {
   color: white;
-  background-image: url("/images/background2.jpg");
+  background-image: url("images/background2.jpg");
   mix-blend-mode: screen;
   border: 3px solid #e67816;
   padding: 12px 22px;
@@ -324,7 +324,7 @@ footer .news button:hover {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/background2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -349,7 +349,7 @@ body {
   justify-content: center;
 }
 .overlay2 .plan1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika1.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
@@ -389,7 +389,7 @@ body {
   color: #e67816;
 }
 .overlay2 .plan2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika2.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
@@ -429,7 +429,7 @@ body {
   color: #e67816;
 }
 .overlay2 .plan3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/slika3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/slika3.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 20px 50px;
