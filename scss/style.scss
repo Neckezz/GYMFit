@@ -69,9 +69,9 @@ $plan-color:#28282B;
     margin:0;
     padding:0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 html{
+    scroll-behavior: smooth;
     body{
         font-family: 'Nunito', sans-serif;
     }
@@ -369,15 +369,6 @@ footer{
       }
     button{
         @include customButton();
-    }
-    .socialmedia{
-        padding-top:20px;
-        img{
-            width:45px;
-        }
-        a{
-            padding:0px 15px;
-        }
     }
 }
 }

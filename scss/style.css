@@ -3,9 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 html body {
   font-family: "Nunito", sans-serif;
 }
@@ -318,15 +320,6 @@ footer .news button:hover {
   mix-blend-mode: screen;
   border: 3px solid #e67816;
   padding: 12px 17px;
-}
-footer .news .socialmedia {
-  padding-top: 20px;
-}
-footer .news .socialmedia img {
-  width: 45px;
-}
-footer .news .socialmedia a {
-  padding: 0px 15px;
 }
 
 body {
