@@ -5,7 +5,7 @@
 </p>
 <hr>
 <br>
-<p>An simple,yet very beautiful responsive website that represents GymFit.</p>
+<p>An smooth,yet very beautiful responsive website that represents GymFit.</p>
 <p>Made with:</p>
 <ul>
   <li>CSS(SCSS)</li>
