@@ -1,5 +1,5 @@
 # GYMFit
-<img src="images/logo.png" style="width:150px;">
+<img src="images/logo.png" style="width:150px; align-content:center;">
 <p>An simple,yet very beautiful responsive website that represents GymFit.</p>
 <p>Made with:</p>
 <ul>
