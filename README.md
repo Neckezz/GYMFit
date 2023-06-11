@@ -6,7 +6,8 @@
   <li>Vanila CSS</li>
   <li>Javascript</li>
 </ul>
-<p>Design made by me from scratch,with goal to learn fundamentlals for Web Development</p>
+<h4>About the project</h4>
+<p>My goal was to make my first serious website that is lightweight,mobile first using only fundamentals in Web Development.</p>
 <a href="https://neckezz.github.io/GYMFit/" target="_blank"></a>
 <h1>Homepage</h1>
 <img src="images/home.jpeg" style="width:500px;">
